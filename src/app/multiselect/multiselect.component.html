@@ -1,0 +1,16 @@
+<div class="chosen-container chosen-container-multi" style="width: 80%;margin-left: 2%" title="">
+  <label for="classification">Class</label>
+  <ul class="chosen-choices">
+    <li class="search-choice selected-tag" *ngFor="let item of selected"><span>{{item.desc}}<a class="remove-icon" (click)="remove(item)">x</a></span></li>
+    <li class="search-field">
+      <input id="classification" tabindex="4" name="classification" type="text" class="validate filter-input" [(ngModel)]=query (keyup)=filter()>
+    </li>
+  </ul>
+  <div class="chosen-drop" *ngIf="filteredList.length > 0">
+    <ul class="chosen-results">
+      <li *ngFor="let item of filteredList" (click)="select(item.id)">{{item.desc}}</li>
+    </ul>
+  </div>
+</div>
+
+
