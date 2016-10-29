@@ -1,5 +1,9 @@
 # Multiselect
 
+MultiSelect Dropdown that supports Angular 2.X Final.
+
+Allows multiselect with tagging support and fuzzy search support.
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
 ## Development server
