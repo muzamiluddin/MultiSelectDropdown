@@ -56,7 +56,6 @@ export class MultiselectComponent implements OnInit {
       }
 
       this.filteredList.filter(function(item){ // iterate through array of items
-        debugger
         var passTest = true;
         terms.forEach(function(term){ // iterate through terms found in query box
           // if any terms aren't found, passTest is set to and remains false
@@ -87,6 +86,10 @@ export class MultiselectComponent implements OnInit {
     this.selected.push(item[0]);
     this.query = '';
     this.filteredList = [];
+  }
+
+  processFocus(e, el){
+    el.focus();
   }
 
   //To hide dropdown when mouse is clicked outside of component
