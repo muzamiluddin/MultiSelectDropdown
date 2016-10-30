@@ -2,7 +2,7 @@
 label {
   font-family: PTSans-Bold;
   font-size: 14px;
-  colozr: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0px;
 }
 
@@ -78,7 +78,7 @@ body {
   overflow: hidden;
   padding: 0 0 0 8px;
   height: 25px;
-  border: 1px solid #aaa;
+  border: none;
   border-radius: 5px;
   background-color: #fff;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #ffffff), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
@@ -228,7 +228,7 @@ body {
   padding: 0 5px;
   width: 100%;
   height: auto;
-  border: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
   background-color: #fff;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
   background-image: -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
@@ -451,13 +451,9 @@ body {
 }
 /* @end */
 
-.search-field{
-  line-height: 20%;
-}
 
 .remove-icon{
  padding-left: 5px;
- font-color: red;
 }
 
 .selected-tag{
@@ -472,4 +468,8 @@ body {
 
 .remove-icon{
   color: inherit;
+}
+
+.chosen-choices {
+  background: none !important;
 }
